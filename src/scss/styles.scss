@@ -1,6 +1,7 @@
 $color-font: #fff;
-$color-bg-default: #33f;
+$color-bg-default: #3ff;
 $font-default: Arial, Helvetica, sans-serif;
+$color-bg-boxes: #FD9;
 
 body {
     background: url('../assets/background.jpg') no-repeat top center;
@@ -15,6 +16,9 @@ h1 {
     width: 100%;
 }
 
+h2{
+    margin-top: 4rem;
+}
 .container {
     display: block;
     max-width: 1200px;
@@ -25,4 +29,33 @@ h1 {
         height: auto;
     }
 
+}
+%boxContainer{
+    background: $color-bg-boxes;
+    display: flex;
+    border-radius: 1rem;
+}
+
+.box__container{
+    @extend %boxContainer;
+    padding: 1rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.box__container2{
+    @extend %boxContainer;
+    padding: 1rem;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+.box{
+    width: 10rem;
+    height: 10rem;
+    //margin: 1rem;
+    border-radius:1rem;
+    border: 2px solid $color-font;
+    text-align: center;
 }
