@@ -2,6 +2,7 @@ $color-font: #fff;
 $color-bg-default: rgb(4, 131, 82);
 $font-default: Arial, Helvetica, sans-serif;
 $color-bg-boxes: rgb(253, 179, 31);
+$font-size-defaut: 1.6rem;
 html {
   font-size: 62.5%;
 }
@@ -26,105 +27,23 @@ h2 {
   margin-top: 4rem;
   text-align: center;
 }
-.container {
+header,
+section,
+footer {
   display: block;
-  max-width: 1200px;
+  float: left;
+  width: 100%;
+}
+.container {
+  display: flex;
+  max-width: 90vw;
   margin: 0 auto;
-
-  img {
-    width: 100%;
-    height: auto;
-  }
+  flex-flow: column;
 }
-%boxContainer {
-  background: $color-bg-boxes;
-  display: flex;
-  border-radius: 1rem;
+#sobre {
+  background-color: #fff;
+}
+#produtos {
 }
 
-.box__container {
-  background: $color-bg-boxes;
-  display: flex;
-  border-radius: 1rem;
-  margin: 2rem auto 4rem;
-  //align-items: center;
-  max-width: 500px;
-  padding: 1rem;
-  height: 20rem;
-  &--around {
-    flex-direction: row-reverse;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: stretch;
-  }
-  &--between {
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: flex-end;
-  }
-  &--evenly {
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
-    align-items: flex-start;
-  }
-  &--center {
-    flex-direction: row-reverse;
-    flex-wrap: nowrap;
-    justify-content: center;
-  }
-  &--grid {
-    display: grid;
-
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: repeat(3, 1fr);
-    column-gap: 2rem;
-    row-gap: 2rem;
-    height: fit-content;
-  }&--image{
-      .box{
-          overflow: hidden;
-          border: 3px solid $color-font;
-          width: auto;
-          img{
-              width: 20rem;
-              height: 20rem;
-              object-fit: cover;
-              object-position: 50% 50%;
-          }
-      }
-  }
-}
-
-.box {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  width: 10rem;
-  min-height: 10rem;
-  margin: 0.5rem;
-  border-radius: 1rem;
-  border: 2px solid $color-font;
-  position: relative;
-  color: $color-font;
-  background-color: $color-bg-default;
-  animation-name: slideIn;
-  animation-duration: 3s;
-  animation-iteration-count: 2;
-  animation-direction: alternate;
-}
-
-@keyframes slideIn {
-  from {
-    left: -999px;
-    opacity: 0.1;
-    height: 0;
-    width: 0;
-  }
-  to {
-    left: 0;
-    opacity: 1;
-    height: fit-content;
-  }
-}
+@import "vitrine";
