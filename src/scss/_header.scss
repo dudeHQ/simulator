@@ -1,0 +1,41 @@
+header,
+section {
+  display: block;
+  float: left;
+  width: 100%;
+}
+.container {
+  display: flex;
+  max-width: 90vw;
+  margin: 0 auto;
+  flex-flow: column;
+}
+
+header {
+  .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .logo {
+    color: black;
+    font-family: $font-logo;
+
+    font-size: 6rem;
+    margin-left: 0.5rem;
+  }
+  nav {
+    a {
+      text-decoration: none;
+      color: black;
+      margin-right: 1rem;
+      font-size: 2rem;
+      &:hover {
+        color: white;
+        background-color: rgb(51, 51, 51);
+        padding: 1rem 2rem;
+      }
+    }
+  }
+}
