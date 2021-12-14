@@ -1,3 +1,4 @@
+import '../scss/reset.scss'
 import '../scss/styles.scss'
 import imageBuilding from '../assets/building.jpg'
 import imageNotebook from '../assets/notebook.jpg'
