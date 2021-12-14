@@ -1,18 +1,27 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+<!--
+██    ██  ████████  ██████  
+██    ██     ██    ██    ██
+██    ██     ██    ██    ██
+ ██████      ██    ██    ██
+   ██        ██     ██████    
+
+Desenvolvido por Victor Rodrigues 
+-->
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Framework Simulator</title>
 </head>
 
 <body>
     <div id="root">
-        <header>
+        <header id="top">
             <div class="container">
-                <h2>Logo</h2>
+                <h2 class="logo">Star Bijuterias</h2>
                 <nav>
                     <a href="#sobre">Sobre</a>
                     <a href="#produtos">Produtos</a>
@@ -27,19 +36,26 @@
                 </aside>
                 <article>
                     <h1>Sobre nós</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed animi quas atque voluptatibus saepe
-                        placeat expedita quidem non debitis, iste excepturi quis quo maiores laborum. Aut eaque iure
-                        illum necessitatibus!</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed animi quas atque voluptatibus saepe
-                        placeat expedita quidem non debitis, iste excepturi quis quo maiores laborum. Aut eaque iure
-                        illum necessitatibus!</p>
+                    <div class="text-about">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
+                            animi quas atque voluptatibus saepe placeat expedita quidem non
+                            debitis, iste excepturi quis quo maiores laborum.
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
+                            animi quas atque voluptatibus saepe placeat expedita quidem non
+                            debitis, iste excepturi quis quo maiores laborum. Aut eaque iure
+                            illum necessitatibus!
+                        </p>
+                    </div>
                 </article>
             </div>
         </section>
         <section id="produtos">
             <div class="container">
                 <h1>Catálogo</h1>
-                <div class="vitrine">
+                <div class="vitrine vitrine-fundo">
                     <div class="vitrine__item">
                         <h3 class="vitrine__produto">Produto 1</h3>
                         <div class="vitrine__image"></div>
@@ -78,28 +94,28 @@
                     </div>
                 </div>
             </div>
-
         </section>
         <section id="contato">
             <div class="container">
                 <h1>Contato</h1>
-                <form id="contato">
-                    <input type="text" placeholder="Nome" class="contato__input">
-                    <input type="text" placeholder="E-mail" class="contato__input">
-                    <button class="contato__button">Enviar</button>
-                </form>
+                <center>
+                    <form id="contato">
+                        <input type="text" required placeholder="Nome" class="contato__input" />
+                        <input type="text" required placeholder="E-mail" class="contato__input" />
+                        <button class="contato__button">Enviar</button>
+                    </form>
+                </center>
             </div>
         </section>
         <footer>
             <div class="container">
-                <p>Loja X &copy; Todos os direitos reservados<br>
-                    <small>Desenvolvido por <a href="#" target="_blank">Victor Rodrigues</a></small>
+                <p>
+                    Star Bijuterias &copy; Todos os direitos reservados<br />
+                    <small>Desenvolvido por
+                        <a href="#" target="_blank">Victor Rodrigues</a></small>
                 </p>
             </div>
         </footer>
-
-
-
     </div>
 </body>
 
